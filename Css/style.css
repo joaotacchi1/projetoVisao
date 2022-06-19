@@ -1,0 +1,181 @@
+@import url(./bootstrap.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Roboto:wght@100&display=swap');
+@import url(./responsive.css);
+@import url(./dark.css);
+
+/*GLOBAL*/
+body,
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2E3440;
+    color: #eceff4;
+    line-height: 150%;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.block {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #BF616A;
+}
+
+a:hover {
+    color: #B48EAD;
+}
+
+.divisor {
+    border-bottom: solid 1px #eceff4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tittle {
+    font-family: 'Metal Mania', cursive;
+}
+
+
+/*GLOBAL*/
+
+#header {
+    width: auto;
+    background-color: transparent;
+    transition: background ease-out 0.3s;
+}
+
+#header.active {
+    width: 100%;
+    padding: 5px;
+    box-shadow: 0 0 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #2E3440;
+}
+
+#logo {
+    height: 125px;
+}
+
+#inicio,
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 1000;
+    color: #BF616A;
+    border-bottom: solid 10px transparent;
+}
+
+#inicio:hover,
+.nav-link:hover {
+    border-bottom: solid 10px #B48EAD;
+    color: #B48EAD;
+}
+
+#slider {
+    width: 100%;
+    height: 100%;
+    background: url("../Images/banner.png") no-repeat;
+    background-size: cover;
+    background-position: 0 55%;
+    margin-top: 0px;
+}
+
+#slider .frase {
+    color: #eceff4;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    text-align: left;
+    font-size: 24px;
+}
+
+#servicos a.destaque {
+    display: block;
+    background: #3B4252;
+    border-radius: 10px;
+    text-align: left;
+    padding: 20px;
+    color: #BF616A;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+    height: 100%;
+}
+
+#servicos a.destaque:hover {
+    background: #eceff4;
+    box-shadow: 5px 5px 5px #B48EAD;
+    transform: scale(1.05);
+}
+
+#servicos a.destaque .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#servicos a.destaque .img-container img {
+    max-height: 160px;
+}
+
+#show .element-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all ease-out 0.2s;
+    height: 450px;
+}
+
+#show .element-item img:hover {
+    background: #eceff4;
+    box-shadow: 5px 5px 5px;
+}
+
+#album .element-item img {
+    border-radius: 10px;
+    transition: all ease-out 0.2s;
+    height: 550px;
+    width: 100%;
+}
+
+#album .element-item img:hover {
+    background: #eceff4;
+    box-shadow: 5px 5px 5px;
+}
+
+.rodape #logo {
+    width: auto;
+}
+
+.rodape-contato {
+    display: flex;
+    text-decoration: none;
+    justify-content: end;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    gap: 10px;
+}
+
+.rodape-contato img {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-right: 10px;
+}
+
+.rodape-contato #spotify{
+    margin-right: 35px;
+}
+
+.rodape-contato #email{
+    margin-right: 40px;
+}
